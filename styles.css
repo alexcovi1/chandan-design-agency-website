@@ -90,8 +90,7 @@
     position: relative;
     margin-bottom: -10%;
  
-    
-    
+
   }
   
   .hero-image img {
@@ -198,8 +197,8 @@
     margin-bottom: 48px;
 }
 
-.title {
-    font-size: 12px;
+.title  {
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 24px;
 }
@@ -274,20 +273,6 @@
     }
 }
 
-@media (max-width: 767px) {
-    .brand-section {
-        padding: 48px 0;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .image-container {
-        max-width: 400px;
-    }
-    
-}
 
 
 
@@ -297,15 +282,14 @@
 .container {
     max-width: 80%;
     margin: 0 auto;
-    padding: 0 20px;
-   
+    padding: 0 20px
    
 }
 
 /* Services section */
 .services {
-    padding: 50px 0;
-    background-color:#f0f8ff
+    padding: 5%;
+    background-color:#f0f8ff;
 }
 
 /* Title styles */
@@ -426,76 +410,5 @@
     background-color: #3451d1;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .hero-content, .hero-image {
-        max-width: 100%;
-    }
 
-    .hero-image {
-        margin-top: 40px;
-    }
-
-    .content-body {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-image, .content-text {
-        max-width: 100%;
-    }
-
-    .brand-content {
-        grid-template-columns: 1fr;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .menu-icon {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-    }
-
-    .menu-icon span {
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5em;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 2em;
-    }
-
-    .content-header h2 {
-        font-size: 2em;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-}
