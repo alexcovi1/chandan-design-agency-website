@@ -288,10 +288,163 @@
 
 
 
+/* THIRD PAGE */
+/* Container */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+   
+   
+}
 
+/* Services section */
+.services {
+    padding: 50px 0;
+    background-color:#f0f8ff
+}
 
+/* Title styles */
+.services-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.title-underline {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
 
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+   
+}
 
+/* Service card */
+.service-card img{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 14px;
+    display: flex;
+    color: white;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--card-overlay);
+    z-index: 1;
+}
 
+.service-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Service icon */
+.service-icon {
+    margin-bottom: 16px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+/* Card content */
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.quote-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.quote-link:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* CTA button */
+.cta-container {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3451d1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services {
+        padding: 60px 0;
+    }
+
+    .services-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        aspect-ratio: 16/9;
+    }
+}
