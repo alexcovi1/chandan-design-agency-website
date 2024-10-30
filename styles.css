@@ -7,13 +7,13 @@
   
   /* Navbar */
   .primary-nav {
-    height: 130px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+   
   }
   
   .nav-content {
@@ -27,6 +27,7 @@
   
   .nav-logo {
     height: 50px;
+    margin-left: 8%;
   }
   
   .menu-icon {
@@ -34,6 +35,7 @@
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    margin-right: 8%;
   }
   
   .menu-icon span {
@@ -47,13 +49,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 135px;
+    padding: 50px 100px;
     background-color: #f0f8ff;
-    height: 600px;
+    max-height: 300px;
   }
   
   .hero-content {
-    max-width: 50%;
+   margin-left: 8%;
+   
   }
   
   .hero-content h1 {
@@ -63,9 +66,6 @@
     line-height: 1.2;
   }
   
-  .hero-content h1 span {
-    color: #1e90ff; /* Colore per "Visual" */
-  }
   
   .cta-button1 {
     margin-top: 20px;
@@ -85,9 +85,13 @@
   }
   
   .hero-image {
-    max-width: 45%;
+    margin-right: 8%;
+    max-width: 25%;
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: -5%;
+ 
+    
+    
   }
   
   .hero-image img {
@@ -155,7 +159,7 @@
   }
   
   .content-image img {
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
@@ -197,7 +201,7 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 10px;
     font-weight: bold;
     margin-bottom: 24px;
 }
@@ -227,7 +231,6 @@
 /* Content layout */
 .content {
     display: grid;
-    gap: 48px;
     align-items: center;
 }
 
@@ -240,11 +243,12 @@
 }
 
 .team-image {
-    width: 100%;
+    width: 75%;
     height: auto;
     border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
+    margin-left: 20%;
 }
 
 /* Text content */
@@ -267,7 +271,8 @@
     }
 
     .title {
-        font-size: 3rem;
+        font-size: 2rem;
+        margin-top: 5%;
     }
 }
 
