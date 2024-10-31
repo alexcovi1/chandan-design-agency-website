@@ -107,6 +107,31 @@
   }
 }
 
+@media screen and  (max-width:576px ) {
+    .hero-section {
+        flex-direction: column;
+        padding: 5% 5%;
+        text-align: center;
+        min-height:100vh;
+
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .hero-image {
+        max-width: 80%;
+        margin: 2rem auto;
+        margin-bottom: 15%;
+    }
+}
+ 
+  
+
+
 
   /* Sezione Contenuto */
 .content-section {
