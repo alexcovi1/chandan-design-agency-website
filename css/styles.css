@@ -178,7 +178,7 @@
 
   /* Container */
   .container2 {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -225,57 +225,92 @@
     font-size: 1.1rem;
 }
 
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Brand section */
+.brand-section {
+  padding: 64px 0;
+  background-color: #ffffff;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #2563eb;
+}
+
+.subtitle {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.1rem;
+}
+
 /* Content layout */
 .content {
-    display: grid;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  
 }
 
 /* Image styles */
 .image-container {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .team-image {
-    width: 75%;
-    height: auto;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    margin-left: 20%;
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-left: 25%;
 }
 
 /* Text content */
 .text-content {
-    color: #666;
+  color: #666;
 }
 
 .text-content p {
-    margin-bottom: 24px;
+  margin-bottom: 5%;
+  margin-right: 16%;
 }
 
 .text-content p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
-/* Responsive design */
-@media (min-width: 768px) {
-    .content {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .title {
-        font-size: 2rem;
-        margin-top: 5%;
-    }
-}
-
-
-
-
 
 /* THIRD PAGE */
 /* Container */
@@ -409,6 +444,3 @@
 .cta-button:hover {
     background-color: #3451d1;
 }
-
-
-
